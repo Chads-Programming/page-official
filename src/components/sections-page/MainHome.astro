@@ -1,0 +1,54 @@
+---
+import AnimationOpen from "../AnimationOpen.astro";
+import ButtonUI from "../ButtonUI.astro";
+import Typography from "../Typography.astro";
+---
+
+<section>
+  <div
+    class="lg:flex lg:justify-center lg:items-center lg:text-center lg:h-[100vh] w-[98%] mx-auto h-full text-center"
+  >
+    <div>
+      <div class="p-3">
+        <AnimationOpen>
+          <Typography>¡Solo para Programadores!</Typography>
+        </AnimationOpen>
+      </div>
+      <section class="flex justify-center flex-col">
+        <AnimationOpen>
+          <img
+            src="../../../public/logo.png"
+            alt="Logo - Chads Programming."
+            width="300"
+            height="300"
+            class="mx-auto rounded-lg"
+          /></AnimationOpen
+        >
+
+        <Typography size="6xl">Chads Programming.</Typography>
+        <p class="pt-[6px] text-neutral-400 max-w-60 mx-auto">
+          Chads Programming. Un Servidor de Discord. Solo para Developers.
+        </p>
+
+        <div class="grid grid-cols-2 w-[450px] h-fit mx-auto scale-105">
+          <ButtonUI Href="https://discord.gg/XXh3NhsZ">
+            <img
+              src="../../../public/discord.svg"
+              alt="Discord | Chads Programming."
+              class="w-[26px]"
+            />
+            <span>Discord</span>
+          </ButtonUI>
+          <ButtonUI Href="https://github.com/Chads-Programming">
+            <img
+              src="../../../public/github.svg"
+              alt="GitHub | Chads Programming."
+              class="w-[26px]"
+            />
+            <span>GitHub</span>
+          </ButtonUI>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>

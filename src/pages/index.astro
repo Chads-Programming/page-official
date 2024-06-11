@@ -1,0 +1,20 @@
+---
+import MainHome from "../components/sections-page/MainHome.astro";
+import Spotilight from "../components/Spotilight.astro";
+import SpotilightMain from "../components/Spotilight_Main.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro." Description="">
+  <main>
+    <section>
+      <section
+        class="-z-20 bg-gradient-to-b from-[#10120998] to-transparent w-full h-[360px] fixed"
+      >
+        <Spotilight />
+        <SpotilightMain />
+      </section>
+      <MainHome />
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,75 @@
+---
+interface Props {
+  title: string;
+  Description: string;
+}
+
+const { title } = Astro.props;
+const { Description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={Description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost Font", sans-serif;
+    background-color: #1f2213;
+    color: white;
+  }
+
+  .atom-font {
+    font-family: "Atomic Font";
+    letter-spacing: 3px;
+  }
+
+  .title_size-6xl {
+    font-size: 3.75rem;
+  }
+
+  /* Animations CLASS */
+
+  .anim-open {
+    opacity: 0;
+    animation: open 2s forwards;
+  }
+
+  @keyframes open {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @font-face {
+    font-family: "Jost Font";
+    font-display: swap;
+    src: url("../../public/font/font-jost.woff2");
+  }
+
+  @font-face {
+    font-family: "Atomic Font";
+    font-display: swap;
+    src: url("../../public/font/font-atomic.woff2");
+  }
+</style>
