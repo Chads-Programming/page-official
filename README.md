@@ -23,18 +23,18 @@ git clone https://github.com/Chads-Programming/page-official.git
 Step2:
 
 ```cmd
-  cd page-official
+cd page-official
 ```
 
 Step 3:
 
 ```cmd
-  pnpm i
+pnpm i
 ```
 
 Step 4:
 ```cmd
-  pnpm run dev
+pnpm run dev
 ```
 
 And just like that, you will have the project on your machine!💻🚀💻🚀✨
